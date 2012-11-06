@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<title>Guess A Number</title>
+<script src='guess.js'></script>
+<style type='text/css'>
+	
+	body{
+		
+	}
+	h1{
+		color:black;
+		text-align:center;
+		text-shadow:10px 10px 6px red;
+	}
+	.description{
+		text-align:center;
+		text-shadow:10px 0px 10px blue;
+	}
+	.range_display{
+		width:100px;
+		height:100px;
+		border-style:outset;
+		text-align:center;
+		padding:10px;
+		font-size:4em;
+		box-shadow:3px 3px 3px 3px black;
+	}
+	input{
+		color:black;
+		width:200px; 
+		height:150px; 
+		position:absolute; 
+		left:550px; 
+		top:150px;
+		text-align:center;
+		font-size:5em;
+	}
+	input:hover{
+		background-color:black;
+		color:white;
+	}
+	button{
+		width:120px;
+		height:100px;
+		background-color:blue;
+		color:white;
+		position:absolute;
+		left:600px;
+		top:350px;
+		border-width:5px;
+		box-shadow:3px 3px 0px 3px gray;
+	}
+	button:hover{
+		-webkit-transform:rotate(30deg);
+	}
+</style>
+</head>
+<body>
+<div style='background: -webkit-linear-gradient(90deg, red, yellow); height:600px;'>
+<h1>Guess A Number</h1>
+<div class='description'>Try to guess a number as less guesses as possible.</div>
+
+<span id='min_value' class='range_display' style='position:absolute; left:300px; top:200px;'>0</span>
+<span id='max_value' class='range_display' style='position:absolute; right:300px; top:200px;'>100</span>
+<input id='guess_input' type=number />
+<button onclick='user_guess()'>Guess!</button>
+</div>
+</body>
+</html>
